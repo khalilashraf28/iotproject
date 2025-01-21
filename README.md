@@ -9,12 +9,12 @@ To clone and set up the project, follow the steps below:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/khalilashraf28/iotproject.git
+git clone https://github.com/khalilashraf28/temperaturehumiditygas_forecasting_using_prophet.git
 ```
 
 ### Navigate to the project folder
 ```bash
-cd iotproject
+cd temperaturehumiditygas_forecasting_using_prophet
 ```
 
 ### Activate the virtual environment
