@@ -79,7 +79,8 @@ with col2:
         st.metric(label="MQ2 (%)", value=df['MQ2 (%)'].iloc[-1])
         st.metric(label="MQ135 (%)", value=df['MQ135 (%)'].iloc[-1])
 with st.container():
-    st.metric(label="MQ135 (%)", value=df['MQ135 (%)'].iloc[-1])
+    airq = (df['MQ5 (%)'].iloc[-1]+df['MQ2 (%)'].iloc[-1]+df['MQ135 (%)'].iloc[-1])/3
+    st.metric(label="Air Quality", value=airq.round())
 with st.expander("Air Quality Info"):
     with st.container():
         st.write("""𝐆𝐞𝐧𝐞𝐫𝐚𝐥 𝐈𝐧𝐭𝐞𝐫𝐩𝐫𝐞𝐭𝐚𝐭𝐢𝐨𝐧 𝐟𝐨𝐫 𝐀𝐢𝐫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲:\n
